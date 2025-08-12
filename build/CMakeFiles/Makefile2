@@ -63,6 +63,7 @@ CMAKE_BINARY_DIR = /home/hacker/curve_dex_limit_order_agent/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/keccak_tiny.dir/all
 all: CMakeFiles/utils.dir/all
 all: CMakeFiles/curve_dex_limit_order_agent.dir/all
 all: CMakeFiles/tests_runner.dir/all
@@ -73,24 +74,51 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/keccak_tiny.dir/clean
 clean: CMakeFiles/utils.dir/clean
 clean: CMakeFiles/curve_dex_limit_order_agent.dir/clean
 clean: CMakeFiles/tests_runner.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/keccak_tiny.dir
+
+# All Build rule for target.
+CMakeFiles/keccak_tiny.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keccak_tiny.dir/build.make CMakeFiles/keccak_tiny.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keccak_tiny.dir/build.make CMakeFiles/keccak_tiny.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hacker/curve_dex_limit_order_agent/build/CMakeFiles --progress-num=16,17 "Built target keccak_tiny"
+.PHONY : CMakeFiles/keccak_tiny.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/keccak_tiny.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hacker/curve_dex_limit_order_agent/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/keccak_tiny.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hacker/curve_dex_limit_order_agent/build/CMakeFiles 0
+.PHONY : CMakeFiles/keccak_tiny.dir/rule
+
+# Convenience name for target.
+keccak_tiny: CMakeFiles/keccak_tiny.dir/rule
+.PHONY : keccak_tiny
+
+# clean rule for target.
+CMakeFiles/keccak_tiny.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keccak_tiny.dir/build.make CMakeFiles/keccak_tiny.dir/clean
+.PHONY : CMakeFiles/keccak_tiny.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/utils.dir
 
 # All Build rule for target.
-CMakeFiles/utils.dir/all:
+CMakeFiles/utils.dir/all: CMakeFiles/keccak_tiny.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hacker/curve_dex_limit_order_agent/build/CMakeFiles --progress-num=22,23,24,25 "Built target utils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hacker/curve_dex_limit_order_agent/build/CMakeFiles --progress-num=25,26,27,28,29,30 "Built target utils"
 .PHONY : CMakeFiles/utils.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/utils.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hacker/curve_dex_limit_order_agent/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hacker/curve_dex_limit_order_agent/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/utils.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hacker/curve_dex_limit_order_agent/build/CMakeFiles 0
 .PHONY : CMakeFiles/utils.dir/rule
@@ -108,15 +136,16 @@ CMakeFiles/utils.dir/clean:
 # Target rules for target CMakeFiles/curve_dex_limit_order_agent.dir
 
 # All Build rule for target.
+CMakeFiles/curve_dex_limit_order_agent.dir/all: CMakeFiles/keccak_tiny.dir/all
 CMakeFiles/curve_dex_limit_order_agent.dir/all: CMakeFiles/utils.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/curve_dex_limit_order_agent.dir/build.make CMakeFiles/curve_dex_limit_order_agent.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/curve_dex_limit_order_agent.dir/build.make CMakeFiles/curve_dex_limit_order_agent.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hacker/curve_dex_limit_order_agent/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target curve_dex_limit_order_agent"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hacker/curve_dex_limit_order_agent/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target curve_dex_limit_order_agent"
 .PHONY : CMakeFiles/curve_dex_limit_order_agent.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/curve_dex_limit_order_agent.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hacker/curve_dex_limit_order_agent/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hacker/curve_dex_limit_order_agent/build/CMakeFiles 23
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/curve_dex_limit_order_agent.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hacker/curve_dex_limit_order_agent/build/CMakeFiles 0
 .PHONY : CMakeFiles/curve_dex_limit_order_agent.dir/rule
@@ -134,15 +163,16 @@ CMakeFiles/curve_dex_limit_order_agent.dir/clean:
 # Target rules for target CMakeFiles/tests_runner.dir
 
 # All Build rule for target.
+CMakeFiles/tests_runner.dir/all: CMakeFiles/keccak_tiny.dir/all
 CMakeFiles/tests_runner.dir/all: CMakeFiles/utils.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests_runner.dir/build.make CMakeFiles/tests_runner.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests_runner.dir/build.make CMakeFiles/tests_runner.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hacker/curve_dex_limit_order_agent/build/CMakeFiles --progress-num=15,16,17,18,19,20,21 "Built target tests_runner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hacker/curve_dex_limit_order_agent/build/CMakeFiles --progress-num=18,19,20,21,22,23,24 "Built target tests_runner"
 .PHONY : CMakeFiles/tests_runner.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests_runner.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hacker/curve_dex_limit_order_agent/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hacker/curve_dex_limit_order_agent/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tests_runner.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hacker/curve_dex_limit_order_agent/build/CMakeFiles 0
 .PHONY : CMakeFiles/tests_runner.dir/rule

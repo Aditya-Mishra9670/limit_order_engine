@@ -173,6 +173,7 @@ tests_runner: CMakeFiles/tests_runner.dir/src/orders/order.cpp.o
 tests_runner: CMakeFiles/tests_runner.dir/src/config/settings.cpp.o
 tests_runner: CMakeFiles/tests_runner.dir/build.make
 tests_runner: libutils.a
+tests_runner: libkeccak_tiny.a
 tests_runner: /usr/lib/x86_64-linux-gnu/libcurl.so
 tests_runner: /usr/lib/x86_64-linux-gnu/libsecp256k1.so
 tests_runner: /usr/lib/x86_64-linux-gnu/libcrypto.so

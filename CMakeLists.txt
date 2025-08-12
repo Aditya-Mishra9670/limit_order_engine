@@ -43,16 +43,26 @@ include_directories(
     ${OpenSSL_INCLUDE_DIR}
 )
 
+# --- keccak-tiny Static Library ---
+add_library(keccak_tiny STATIC
+    src/utils/keccak-tiny/keccak-tiny.c
+)
+target_include_directories(keccak_tiny PUBLIC src/utils/keccak-tiny)
+set_source_files_properties(src/utils/keccak-tiny/keccak-tiny.c PROPERTIES LANGUAGE C)
+
 # --- Utility Library ---
 add_library(utils STATIC
     src/utils/sign_utils.cpp
     src/utils/eth_utils.cpp
     src/utils/logger.cpp
+    src/utils/keccak-tiny/keccak-tiny.c 
+    src/utils/keccak_wrapper.cpp
 )
 
 target_link_libraries(utils PRIVATE
     ${CURL_LIBRARIES}
     nlohmann_json::nlohmann_json
+    keccak_tiny
 )
 
 if (SECP256K1_LIB)
@@ -63,11 +73,12 @@ if (OpenSSL_FOUND)
     target_link_libraries(utils PRIVATE OpenSSL::Crypto)
 endif()
 
+
 # --- Main Executable ---
 file(GLOB_RECURSE MAIN_SOURCES src/*.cpp)
 
 add_executable(${PROJECT_NAME} ${MAIN_SOURCES})
-target_link_libraries(${PROJECT_NAME} PRIVATE utils)
+target_link_libraries(${PROJECT_NAME} PRIVATE utils keccak_tiny)
 
 set_target_properties(${PROJECT_NAME} PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
@@ -101,6 +112,7 @@ target_include_directories(tests_runner PRIVATE
 
 target_link_libraries(tests_runner PRIVATE
     utils
+    keccak_tiny
     nlohmann_json::nlohmann_json
     ${CURL_LIBRARIES}
 )

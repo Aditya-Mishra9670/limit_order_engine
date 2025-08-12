@@ -19,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/curve_dex_limit_order_agent.dir/src/orders/tif_policies.cpp.o.d"
   "CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/eth_utils.cpp.o"
   "CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/eth_utils.cpp.o.d"
+  "CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/keccak_wrapper.cpp.o"
+  "CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/keccak_wrapper.cpp.o.d"
   "CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/logger.cpp.o"
   "CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/logger.cpp.o.d"
   "CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/price_feed.cpp.o"

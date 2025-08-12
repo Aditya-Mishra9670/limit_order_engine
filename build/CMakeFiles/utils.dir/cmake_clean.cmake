@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/utils.dir/src/utils/eth_utils.cpp.o"
   "CMakeFiles/utils.dir/src/utils/eth_utils.cpp.o.d"
+  "CMakeFiles/utils.dir/src/utils/keccak-tiny/keccak-tiny.c.o"
+  "CMakeFiles/utils.dir/src/utils/keccak-tiny/keccak-tiny.c.o.d"
+  "CMakeFiles/utils.dir/src/utils/keccak_wrapper.cpp.o"
+  "CMakeFiles/utils.dir/src/utils/keccak_wrapper.cpp.o.d"
   "CMakeFiles/utils.dir/src/utils/logger.cpp.o"
   "CMakeFiles/utils.dir/src/utils/logger.cpp.o.d"
   "CMakeFiles/utils.dir/src/utils/sign_utils.cpp.o"
@@ -10,6 +14,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang CXX)
+foreach(lang C CXX)
   include(CMakeFiles/utils.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

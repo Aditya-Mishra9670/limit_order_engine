@@ -127,6 +127,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named keccak_tiny
+
+# Build rule for target.
+keccak_tiny: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 keccak_tiny
+.PHONY : keccak_tiny
+
+# fast build rule for target.
+keccak_tiny/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keccak_tiny.dir/build.make CMakeFiles/keccak_tiny.dir/build
+.PHONY : keccak_tiny/fast
+
+#=============================================================================
 # Target rules for targets named utils
 
 # Build rule for target.
@@ -423,6 +436,60 @@ src/utils/eth_utils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/curve_dex_limit_order_agent.dir/build.make CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/eth_utils.cpp.s
 .PHONY : src/utils/eth_utils.cpp.s
 
+src/utils/keccak-tiny/keccak-tiny.o: src/utils/keccak-tiny/keccak-tiny.c.o
+.PHONY : src/utils/keccak-tiny/keccak-tiny.o
+
+# target to build an object file
+src/utils/keccak-tiny/keccak-tiny.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keccak_tiny.dir/build.make CMakeFiles/keccak_tiny.dir/src/utils/keccak-tiny/keccak-tiny.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/src/utils/keccak-tiny/keccak-tiny.c.o
+.PHONY : src/utils/keccak-tiny/keccak-tiny.c.o
+
+src/utils/keccak-tiny/keccak-tiny.i: src/utils/keccak-tiny/keccak-tiny.c.i
+.PHONY : src/utils/keccak-tiny/keccak-tiny.i
+
+# target to preprocess a source file
+src/utils/keccak-tiny/keccak-tiny.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keccak_tiny.dir/build.make CMakeFiles/keccak_tiny.dir/src/utils/keccak-tiny/keccak-tiny.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/src/utils/keccak-tiny/keccak-tiny.c.i
+.PHONY : src/utils/keccak-tiny/keccak-tiny.c.i
+
+src/utils/keccak-tiny/keccak-tiny.s: src/utils/keccak-tiny/keccak-tiny.c.s
+.PHONY : src/utils/keccak-tiny/keccak-tiny.s
+
+# target to generate assembly for a file
+src/utils/keccak-tiny/keccak-tiny.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keccak_tiny.dir/build.make CMakeFiles/keccak_tiny.dir/src/utils/keccak-tiny/keccak-tiny.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/src/utils/keccak-tiny/keccak-tiny.c.s
+.PHONY : src/utils/keccak-tiny/keccak-tiny.c.s
+
+src/utils/keccak_wrapper.o: src/utils/keccak_wrapper.cpp.o
+.PHONY : src/utils/keccak_wrapper.o
+
+# target to build an object file
+src/utils/keccak_wrapper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/src/utils/keccak_wrapper.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/curve_dex_limit_order_agent.dir/build.make CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/keccak_wrapper.cpp.o
+.PHONY : src/utils/keccak_wrapper.cpp.o
+
+src/utils/keccak_wrapper.i: src/utils/keccak_wrapper.cpp.i
+.PHONY : src/utils/keccak_wrapper.i
+
+# target to preprocess a source file
+src/utils/keccak_wrapper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/src/utils/keccak_wrapper.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/curve_dex_limit_order_agent.dir/build.make CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/keccak_wrapper.cpp.i
+.PHONY : src/utils/keccak_wrapper.cpp.i
+
+src/utils/keccak_wrapper.s: src/utils/keccak_wrapper.cpp.s
+.PHONY : src/utils/keccak_wrapper.s
+
+# target to generate assembly for a file
+src/utils/keccak_wrapper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/src/utils/keccak_wrapper.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/curve_dex_limit_order_agent.dir/build.make CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/keccak_wrapper.cpp.s
+.PHONY : src/utils/keccak_wrapper.cpp.s
+
 src/utils/logger.o: src/utils/logger.cpp.o
 .PHONY : src/utils/logger.o
 
@@ -535,6 +602,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... curve_dex_limit_order_agent"
+	@echo "... keccak_tiny"
 	@echo "... tests_runner"
 	@echo "... utils"
 	@echo "... src/blockchain/curve_pool.o"
@@ -567,6 +635,12 @@ help:
 	@echo "... src/utils/eth_utils.o"
 	@echo "... src/utils/eth_utils.i"
 	@echo "... src/utils/eth_utils.s"
+	@echo "... src/utils/keccak-tiny/keccak-tiny.o"
+	@echo "... src/utils/keccak-tiny/keccak-tiny.i"
+	@echo "... src/utils/keccak-tiny/keccak-tiny.s"
+	@echo "... src/utils/keccak_wrapper.o"
+	@echo "... src/utils/keccak_wrapper.i"
+	@echo "... src/utils/keccak_wrapper.s"
 	@echo "... src/utils/logger.o"
 	@echo "... src/utils/logger.i"
 	@echo "... src/utils/logger.s"

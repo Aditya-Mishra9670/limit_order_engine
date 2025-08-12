@@ -7,6 +7,7 @@ CMakeFiles/tests_runner.dir/src/blockchain/curve_pool.cpp.o: /home/hacker/curve_
   /home/hacker/curve_dex_limit_order_agent/src/orders/tif_policies.h \
   /home/hacker/curve_dex_limit_order_agent/src/blockchain/curve_pool.h \
   /home/hacker/curve_dex_limit_order_agent/src/utils/eth_utils.h \
+  /home/hacker/curve_dex_limit_order_agent/src/utils/rlp_encoder.h \
   /home/hacker/curve_dex_limit_order_agent/src/utils/sign_utils.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -3633,6 +3634,7 @@ CMakeFiles/tests_runner.dir/src/orders/tif_policies.cpp.o: /home/hacker/curve_de
 CMakeFiles/tests_runner.dir/tests/test_tif_policies.cpp.o: /home/hacker/curve_dex_limit_order_agent/tests/test_tif_policies.cpp \
   /home/hacker/curve_dex_limit_order_agent/external/Catch2/catch.hpp \
   /home/hacker/curve_dex_limit_order_agent/src/utils/eth_utils.h \
+  /home/hacker/curve_dex_limit_order_agent/src/utils/rlp_encoder.h \
   /home/hacker/curve_dex_limit_order_agent/src/utils/sign_utils.h \
   /home/hacker/curve_dex_limit_order_agent/src/blockchain/curve_pool.h \
   /home/hacker/curve_dex_limit_order_agent/src/orders/order.h \
@@ -5566,10 +5568,6 @@ CMakeFiles/tests_runner.dir/tests/test_tif_policies.cpp.o: /home/hacker/curve_de
 
 /usr/include/boost/container/detail/std_fwd.hpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/wbnoinvdintrin.h:
-
-/usr/include/boost/mpl/aux_/config/msvc_typename.hpp:
-
 /usr/include/boost/multiprecision/cpp_int/import_export.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessor/enum.hpp:
@@ -5682,16 +5680,6 @@ CMakeFiles/tests_runner.dir/tests/test_tif_policies.cpp.o: /home/hacker/curve_de
 
 /usr/include/boost/preprocessor/seq/elem.hpp:
 
-/usr/include/boost/core/checked_delete.hpp:
-
-/usr/include/c++/13/bits/ptr_traits.h:
-
-/usr/include/boost/lexical_cast/detail/inf_nan.hpp:
-
-/home/hacker/curve_dex_limit_order_agent/src/orders/tif_policies.cpp:
-
-/usr/include/boost/preprocessor/punctuation/comma_if.hpp:
-
 /usr/include/boost/mpl/aux_/msvc_never_true.hpp:
 
 /usr/include/boost/math/cstdfloat/cstdfloat_types.hpp:
@@ -5724,7 +5712,21 @@ CMakeFiles/tests_runner.dir/tests/test_tif_policies.cpp.o: /home/hacker/curve_de
 
 /usr/include/boost/config/stdlib/libstdcpp3.hpp:
 
+/usr/include/c++/13/bits/align.h:
+
+/usr/include/boost/type_traits/is_void.hpp:
+
 /usr/include/boost/detail/indirect_traits.hpp:
+
+/usr/include/boost/range/detail/sfinae.hpp:
+
+/home/hacker/curve_dex_limit_order_agent/src/orders/tif_policies.h:
+
+/usr/include/boost/move/detail/std_ns_begin.hpp:
+
+/usr/include/c++/13/bits/shared_ptr_atomic.h:
+
+/usr/include/boost/predef/make.h:
 
 /usr/include/boost/type_traits/is_class.hpp:
 
@@ -5772,10 +5774,6 @@ CMakeFiles/tests_runner.dir/tests/test_tif_policies.cpp.o: /home/hacker/curve_de
 
 /usr/include/boost/numeric/conversion/bounds.hpp:
 
-/usr/include/stdio.h:
-
-/usr/include/boost/detail/lcast_precision.hpp:
-
 /usr/include/asm-generic/errno-base.h:
 
 /usr/include/c++/13/cmath:
@@ -5794,7 +5792,15 @@ CMakeFiles/tests_runner.dir/tests/test_tif_policies.cpp.o: /home/hacker/curve_de
 
 /usr/include/boost/preprocessor/variadic/size.hpp:
 
-/usr/include/boost/lexical_cast.hpp:
+/usr/include/boost/core/checked_delete.hpp:
+
+/usr/include/c++/13/bits/ptr_traits.h:
+
+/usr/include/boost/lexical_cast/detail/inf_nan.hpp:
+
+/home/hacker/curve_dex_limit_order_agent/src/orders/tif_policies.cpp:
+
+/usr/include/boost/preprocessor/punctuation/comma_if.hpp:
 
 /usr/include/c++/13/debug/debug.h:
 
@@ -5840,10 +5846,6 @@ CMakeFiles/tests_runner.dir/tests/test_tif_policies.cpp.o: /home/hacker/curve_de
 
 /home/hacker/curve_dex_limit_order_agent/src/orders/order.h:
 
-/usr/include/boost/range/detail/sfinae.hpp:
-
-/home/hacker/curve_dex_limit_order_agent/src/orders/tif_policies.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /usr/include/boost/iterator/detail/enable_if.hpp:
@@ -5875,6 +5877,12 @@ CMakeFiles/tests_runner.dir/tests/test_tif_policies.cpp.o: /home/hacker/curve_de
 /usr/include/boost/mpl/aux_/arithmetic_op.hpp:
 
 /usr/include/boost/type_traits/is_const.hpp:
+
+/usr/include/stdio.h:
+
+/usr/include/boost/detail/lcast_precision.hpp:
+
+/usr/include/boost/lexical_cast.hpp:
 
 /usr/include/c++/13/cctype:
 
@@ -6014,6 +6022,12 @@ CMakeFiles/tests_runner.dir/tests/test_tif_policies.cpp.o: /home/hacker/curve_de
 
 /usr/include/boost/preprocessor/arithmetic/sub.hpp:
 
+/usr/include/boost/multiprecision/cpp_int/divide.hpp:
+
+/usr/include/boost/range/end.hpp:
+
+/usr/include/boost/concept/detail/has_constraints.hpp:
+
 /usr/include/boost/config/helper_macros.hpp:
 
 /usr/include/boost/lexical_cast/detail/lcast_char_constants.hpp:
@@ -6024,21 +6038,9 @@ CMakeFiles/tests_runner.dir/tests/test_tif_policies.cpp.o: /home/hacker/curve_de
 
 /usr/include/boost/mpl/next_prior.hpp:
 
-/usr/include/boost/math/tools/cxx03_warn.hpp:
-
-/usr/include/boost/multiprecision/cpp_int/divide.hpp:
-
-/usr/include/boost/range/end.hpp:
-
-/usr/include/boost/concept/detail/has_constraints.hpp:
-
 /usr/include/boost/mpl/aux_/adl_barrier.hpp:
 
 /usr/include/boost/mpl/apply_wrap.hpp:
-
-/usr/include/boost/type_traits/is_void.hpp:
-
-/usr/include/c++/13/bits/align.h:
 
 /usr/include/boost/core/no_exceptions_support.hpp:
 
@@ -6049,6 +6051,18 @@ CMakeFiles/tests_runner.dir/tests/test_tif_policies.cpp.o: /home/hacker/curve_de
 /usr/include/c++/13/tr1/hypergeometric.tcc:
 
 /usr/include/boost/multiprecision/traits/is_variable_precision.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/wbnoinvdintrin.h:
+
+/usr/include/boost/mpl/aux_/config/msvc_typename.hpp:
+
+/home/hacker/curve_dex_limit_order_agent/src/utils/rlp_encoder.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/movdirintrin.h:
+
+/usr/include/boost/range/detail/has_member_size.hpp:
+
+/usr/include/boost/range/iterator_range_core.hpp:
 
 /usr/include/nlohmann/detail/meta/call_std/begin.hpp:
 
@@ -6109,14 +6123,6 @@ CMakeFiles/tests_runner.dir/tests/test_tif_policies.cpp.o: /home/hacker/curve_de
 /usr/include/boost/iterator/is_iterator.hpp:
 
 /usr/include/boost/lexical_cast/bad_lexical_cast.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/ia32intrin.h:
-
-/usr/include/boost/preprocessor/variadic/limits/size_64.hpp:
-
-/usr/include/boost/multiprecision/cpp_int/literals.hpp:
-
-/usr/include/boost/mpl/aux_/msvc_eti_base.hpp:
 
 /usr/include/nlohmann/json.hpp:
 
@@ -6214,6 +6220,16 @@ CMakeFiles/tests_runner.dir/tests/test_tif_policies.cpp.o: /home/hacker/curve_de
 
 /usr/include/boost/type_traits/is_volatile.hpp:
 
+/usr/include/boost/math/tools/cxx03_warn.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/ia32intrin.h:
+
+/usr/include/boost/preprocessor/variadic/limits/size_64.hpp:
+
+/usr/include/boost/mpl/aux_/msvc_eti_base.hpp:
+
+/usr/include/boost/multiprecision/cpp_int/literals.hpp:
+
 /usr/include/boost/math/tools/is_constant_evaluated.hpp:
 
 /usr/include/boost/math/tools/is_detected.hpp:
@@ -6241,12 +6257,6 @@ CMakeFiles/tests_runner.dir/tests/test_tif_policies.cpp.o: /home/hacker/curve_de
 /usr/include/boost/mpl/aux_/na_spec.hpp:
 
 /usr/include/boost/math/tools/user.hpp:
-
-/usr/include/c++/13/bits/shared_ptr_atomic.h:
-
-/usr/include/boost/predef/make.h:
-
-/usr/include/boost/move/detail/std_ns_begin.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/socket.h:
 
@@ -6570,17 +6580,17 @@ CMakeFiles/tests_runner.dir/tests/test_tif_policies.cpp.o: /home/hacker/curve_de
 
 /usr/include/nlohmann/detail/meta/type_traits.hpp:
 
-/usr/include/boost/mpl/void_fwd.hpp:
-
 /usr/include/boost/config/pragma_message.hpp:
+
+/usr/include/boost/mpl/void_fwd.hpp:
 
 /usr/include/boost/preprocessor/list/fold_left.hpp:
 
 /usr/include/boost/range/detail/implementation_help.hpp:
 
-/usr/include/boost/mpl/assert.hpp:
-
 /usr/include/boost/range/iterator.hpp:
+
+/usr/include/boost/mpl/assert.hpp:
 
 /usr/include/boost/preprocessor/list/fold_right.hpp:
 
@@ -6669,12 +6679,6 @@ CMakeFiles/tests_runner.dir/tests/test_tif_policies.cpp.o: /home/hacker/curve_de
 /usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:
 
 /usr/include/boost/range/detail/extract_optional_type.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/movdirintrin.h:
-
-/usr/include/boost/range/detail/has_member_size.hpp:
-
-/usr/include/boost/range/iterator_range_core.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 

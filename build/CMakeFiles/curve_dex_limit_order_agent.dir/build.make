@@ -209,10 +209,24 @@ CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/eth_utils.cpp.s: cmake_forc
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/eth_utils.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hacker/curve_dex_limit_order_agent/src/utils/eth_utils.cpp -o CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/eth_utils.cpp.s
 
+CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/keccak_wrapper.cpp.o: CMakeFiles/curve_dex_limit_order_agent.dir/flags.make
+CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/keccak_wrapper.cpp.o: /home/hacker/curve_dex_limit_order_agent/src/utils/keccak_wrapper.cpp
+CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/keccak_wrapper.cpp.o: CMakeFiles/curve_dex_limit_order_agent.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hacker/curve_dex_limit_order_agent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/keccak_wrapper.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/keccak_wrapper.cpp.o -MF CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/keccak_wrapper.cpp.o.d -o CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/keccak_wrapper.cpp.o -c /home/hacker/curve_dex_limit_order_agent/src/utils/keccak_wrapper.cpp
+
+CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/keccak_wrapper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/keccak_wrapper.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hacker/curve_dex_limit_order_agent/src/utils/keccak_wrapper.cpp > CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/keccak_wrapper.cpp.i
+
+CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/keccak_wrapper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/keccak_wrapper.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hacker/curve_dex_limit_order_agent/src/utils/keccak_wrapper.cpp -o CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/keccak_wrapper.cpp.s
+
 CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/logger.cpp.o: CMakeFiles/curve_dex_limit_order_agent.dir/flags.make
 CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/logger.cpp.o: /home/hacker/curve_dex_limit_order_agent/src/utils/logger.cpp
 CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/logger.cpp.o: CMakeFiles/curve_dex_limit_order_agent.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hacker/curve_dex_limit_order_agent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/logger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hacker/curve_dex_limit_order_agent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/logger.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/logger.cpp.o -MF CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/logger.cpp.o.d -o CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/logger.cpp.o -c /home/hacker/curve_dex_limit_order_agent/src/utils/logger.cpp
 
 CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/logger.cpp.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/logger.cpp.s: cmake_force
 CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/price_feed.cpp.o: CMakeFiles/curve_dex_limit_order_agent.dir/flags.make
 CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/price_feed.cpp.o: /home/hacker/curve_dex_limit_order_agent/src/utils/price_feed.cpp
 CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/price_feed.cpp.o: CMakeFiles/curve_dex_limit_order_agent.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hacker/curve_dex_limit_order_agent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/price_feed.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hacker/curve_dex_limit_order_agent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/price_feed.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/price_feed.cpp.o -MF CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/price_feed.cpp.o.d -o CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/price_feed.cpp.o -c /home/hacker/curve_dex_limit_order_agent/src/utils/price_feed.cpp
 
 CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/price_feed.cpp.i: cmake_force
@@ -240,7 +254,7 @@ CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/price_feed.cpp.s: cmake_for
 CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/sign_utils.cpp.o: CMakeFiles/curve_dex_limit_order_agent.dir/flags.make
 CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/sign_utils.cpp.o: /home/hacker/curve_dex_limit_order_agent/src/utils/sign_utils.cpp
 CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/sign_utils.cpp.o: CMakeFiles/curve_dex_limit_order_agent.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hacker/curve_dex_limit_order_agent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/sign_utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hacker/curve_dex_limit_order_agent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/sign_utils.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/sign_utils.cpp.o -MF CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/sign_utils.cpp.o.d -o CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/sign_utils.cpp.o -c /home/hacker/curve_dex_limit_order_agent/src/utils/sign_utils.cpp
 
 CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/sign_utils.cpp.i: cmake_force
@@ -263,6 +277,7 @@ curve_dex_limit_order_agent_OBJECTS = \
 "CMakeFiles/curve_dex_limit_order_agent.dir/src/orders/slippage.cpp.o" \
 "CMakeFiles/curve_dex_limit_order_agent.dir/src/orders/tif_policies.cpp.o" \
 "CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/eth_utils.cpp.o" \
+"CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/keccak_wrapper.cpp.o" \
 "CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/logger.cpp.o" \
 "CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/price_feed.cpp.o" \
 "CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/sign_utils.cpp.o"
@@ -280,16 +295,18 @@ bin/curve_dex_limit_order_agent: CMakeFiles/curve_dex_limit_order_agent.dir/src/
 bin/curve_dex_limit_order_agent: CMakeFiles/curve_dex_limit_order_agent.dir/src/orders/slippage.cpp.o
 bin/curve_dex_limit_order_agent: CMakeFiles/curve_dex_limit_order_agent.dir/src/orders/tif_policies.cpp.o
 bin/curve_dex_limit_order_agent: CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/eth_utils.cpp.o
+bin/curve_dex_limit_order_agent: CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/keccak_wrapper.cpp.o
 bin/curve_dex_limit_order_agent: CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/logger.cpp.o
 bin/curve_dex_limit_order_agent: CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/price_feed.cpp.o
 bin/curve_dex_limit_order_agent: CMakeFiles/curve_dex_limit_order_agent.dir/src/utils/sign_utils.cpp.o
 bin/curve_dex_limit_order_agent: CMakeFiles/curve_dex_limit_order_agent.dir/build.make
 bin/curve_dex_limit_order_agent: libutils.a
+bin/curve_dex_limit_order_agent: libkeccak_tiny.a
 bin/curve_dex_limit_order_agent: /usr/lib/x86_64-linux-gnu/libcurl.so
 bin/curve_dex_limit_order_agent: /usr/lib/x86_64-linux-gnu/libsecp256k1.so
 bin/curve_dex_limit_order_agent: /usr/lib/x86_64-linux-gnu/libcrypto.so
 bin/curve_dex_limit_order_agent: CMakeFiles/curve_dex_limit_order_agent.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hacker/curve_dex_limit_order_agent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable bin/curve_dex_limit_order_agent"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hacker/curve_dex_limit_order_agent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable bin/curve_dex_limit_order_agent"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/curve_dex_limit_order_agent.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

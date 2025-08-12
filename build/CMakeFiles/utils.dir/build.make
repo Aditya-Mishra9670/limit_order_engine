@@ -111,11 +111,41 @@ CMakeFiles/utils.dir/src/utils/logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/utils.dir/src/utils/logger.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hacker/curve_dex_limit_order_agent/src/utils/logger.cpp -o CMakeFiles/utils.dir/src/utils/logger.cpp.s
 
+CMakeFiles/utils.dir/src/utils/keccak-tiny/keccak-tiny.c.o: CMakeFiles/utils.dir/flags.make
+CMakeFiles/utils.dir/src/utils/keccak-tiny/keccak-tiny.c.o: /home/hacker/curve_dex_limit_order_agent/src/utils/keccak-tiny/keccak-tiny.c
+CMakeFiles/utils.dir/src/utils/keccak-tiny/keccak-tiny.c.o: CMakeFiles/utils.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hacker/curve_dex_limit_order_agent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/utils.dir/src/utils/keccak-tiny/keccak-tiny.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/utils.dir/src/utils/keccak-tiny/keccak-tiny.c.o -MF CMakeFiles/utils.dir/src/utils/keccak-tiny/keccak-tiny.c.o.d -o CMakeFiles/utils.dir/src/utils/keccak-tiny/keccak-tiny.c.o -c /home/hacker/curve_dex_limit_order_agent/src/utils/keccak-tiny/keccak-tiny.c
+
+CMakeFiles/utils.dir/src/utils/keccak-tiny/keccak-tiny.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/utils.dir/src/utils/keccak-tiny/keccak-tiny.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hacker/curve_dex_limit_order_agent/src/utils/keccak-tiny/keccak-tiny.c > CMakeFiles/utils.dir/src/utils/keccak-tiny/keccak-tiny.c.i
+
+CMakeFiles/utils.dir/src/utils/keccak-tiny/keccak-tiny.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/utils.dir/src/utils/keccak-tiny/keccak-tiny.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hacker/curve_dex_limit_order_agent/src/utils/keccak-tiny/keccak-tiny.c -o CMakeFiles/utils.dir/src/utils/keccak-tiny/keccak-tiny.c.s
+
+CMakeFiles/utils.dir/src/utils/keccak_wrapper.cpp.o: CMakeFiles/utils.dir/flags.make
+CMakeFiles/utils.dir/src/utils/keccak_wrapper.cpp.o: /home/hacker/curve_dex_limit_order_agent/src/utils/keccak_wrapper.cpp
+CMakeFiles/utils.dir/src/utils/keccak_wrapper.cpp.o: CMakeFiles/utils.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hacker/curve_dex_limit_order_agent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/utils.dir/src/utils/keccak_wrapper.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/utils.dir/src/utils/keccak_wrapper.cpp.o -MF CMakeFiles/utils.dir/src/utils/keccak_wrapper.cpp.o.d -o CMakeFiles/utils.dir/src/utils/keccak_wrapper.cpp.o -c /home/hacker/curve_dex_limit_order_agent/src/utils/keccak_wrapper.cpp
+
+CMakeFiles/utils.dir/src/utils/keccak_wrapper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/utils.dir/src/utils/keccak_wrapper.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hacker/curve_dex_limit_order_agent/src/utils/keccak_wrapper.cpp > CMakeFiles/utils.dir/src/utils/keccak_wrapper.cpp.i
+
+CMakeFiles/utils.dir/src/utils/keccak_wrapper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/utils.dir/src/utils/keccak_wrapper.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hacker/curve_dex_limit_order_agent/src/utils/keccak_wrapper.cpp -o CMakeFiles/utils.dir/src/utils/keccak_wrapper.cpp.s
+
 # Object files for target utils
 utils_OBJECTS = \
 "CMakeFiles/utils.dir/src/utils/sign_utils.cpp.o" \
 "CMakeFiles/utils.dir/src/utils/eth_utils.cpp.o" \
-"CMakeFiles/utils.dir/src/utils/logger.cpp.o"
+"CMakeFiles/utils.dir/src/utils/logger.cpp.o" \
+"CMakeFiles/utils.dir/src/utils/keccak-tiny/keccak-tiny.c.o" \
+"CMakeFiles/utils.dir/src/utils/keccak_wrapper.cpp.o"
 
 # External object files for target utils
 utils_EXTERNAL_OBJECTS =
@@ -123,9 +153,11 @@ utils_EXTERNAL_OBJECTS =
 libutils.a: CMakeFiles/utils.dir/src/utils/sign_utils.cpp.o
 libutils.a: CMakeFiles/utils.dir/src/utils/eth_utils.cpp.o
 libutils.a: CMakeFiles/utils.dir/src/utils/logger.cpp.o
+libutils.a: CMakeFiles/utils.dir/src/utils/keccak-tiny/keccak-tiny.c.o
+libutils.a: CMakeFiles/utils.dir/src/utils/keccak_wrapper.cpp.o
 libutils.a: CMakeFiles/utils.dir/build.make
 libutils.a: CMakeFiles/utils.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hacker/curve_dex_limit_order_agent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libutils.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hacker/curve_dex_limit_order_agent/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libutils.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/utils.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/utils.dir/link.txt --verbose=$(VERBOSE)
 

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/hacker/curve_dex_limit_order_agent/src -I/home/hacker/curve_dex_limit_order_agent/src/utils -I/home/hacker/curve_dex_limit_order_agent/include
+CXX_INCLUDES = -I/home/hacker/curve_dex_limit_order_agent/src -I/home/hacker/curve_dex_limit_order_agent/src/utils -I/home/hacker/curve_dex_limit_order_agent/include -I/home/hacker/curve_dex_limit_order_agent/src/utils/keccak-tiny
 
 CXX_FLAGS = -std=gnu++17
 

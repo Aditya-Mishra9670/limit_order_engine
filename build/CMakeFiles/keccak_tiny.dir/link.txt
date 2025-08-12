@@ -1,0 +1,2 @@
+/usr/bin/ar qc libkeccak_tiny.a "CMakeFiles/keccak_tiny.dir/src/utils/keccak-tiny/keccak-tiny.c.o"
+/usr/bin/ranlib libkeccak_tiny.a
